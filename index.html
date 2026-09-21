@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameHub - Take a Break. Play Something.</title>
+<link rel="stylesheet" href="hp.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">Game<span>Hub</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#featured">Games</a>
+      <a href="#all-games">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="nav-search">
+      <input type="text" id="navSearchInput" placeholder="Search games...">
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-decoration">
+    <span class="pixel p1"></span>
+    <span class="pixel p2"></span>
+    <span class="pixel p3"></span>
+    <span class="pixel p4"></span>
+  </div>
+  <div class="hero-content">
+    <h1>Take a Break. Play Something.</h1>
+    <p>GameHub is a small collection of quick browser games — jump in, play a round or two, and get back to whatever you were doing. No downloads, no accounts, just games.</p>
+    <div class="hero-buttons">
+      <a href="#all-games" class="btn btn-primary">Explore Games</a>
+      <a href="#featured" class="btn btn-secondary">Featured Games</a>
+    </div>
+  </div>
+</section>
+
+<section class="featured" id="featured">
+  <div class="section-header">
+    <h2>Featured Games</h2>
+    <p>A few picks worth trying first</p>
+  </div>
+  <div class="featured-grid" id="featuredGrid">
+    </div>
+</section>
+
+<section class="all-games" id="all-games">
+  <div class="section-header">
+    <h2>All Games</h2>
+    <p>Browse the full collection</p>
+  </div>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search by name...">
+    <div class="category-filters" id="categoryFilters">
+      <button class="filter-btn active" data-category="All">All</button>
+      <button class="filter-btn" data-category="Action">Action</button>
+      <button class="filter-btn" data-category="Puzzle">Puzzle</button>
+      <button class="filter-btn" data-category="Arcade">Arcade</button>
+      <button class="filter-btn" data-category="Sports">Sports</button>
+      <button class="filter-btn" data-category="Strategy">Strategy</button>
+    </div>
+  </div>
+
+  <div class="loading" id="loadingState">Loading games...</div>
+  <div class="games-grid" id="gamesGrid"></div>
+  <div class="no-results" id="noResults">
+    <p>No games found. Try a different search or category.</p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-header">
+    <h2>About GameHub</h2>
+  </div>
+  <div class="about-content">
+    <p>GameHub is a website made for folks who are bored, and wish to spend their time playing light games. Enjoy all sorts of games, of every genre!</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <span class="logo">Game<span>Hub</span></span>
+      <p>A mini-games hub. Built for gamers who want to play for fun.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#featured">Games</a>
+      <a href="#all-games">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> GameHub </p>
+  </div>
+</footer>
+
+<script src="scripthp.js"></script>
+</body>
+</html>
+
+
